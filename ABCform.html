@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+	<meta charset="utf-8" content="width=device-width">
+	<link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Righteous" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+	<style type="text/css">
+	body{font-family: 'Kaushan Script', cursive;
+	position: absolute;
+	
+}
+
+p{color: white;}
+
+	.container{border:10px solid #000;
+		position: relative;}
+		.textb{position: absolute;
+			top: 8%;
+			left: 10%;
+			right: 20%}
+
+		div1{font-size: 3em;top: 10%;
+			animation: ani 4s infinite;}
+			@keyframes ani {20%{color:red; }40%{color: #ff0066;}60%{color: #ff00ff;}80%{color: #0033cc;}}
+</style>
+
+</head>
+<body >
+
+	<div class="container">
+
+
+<img src="https://www.setaswall.com/wp-content/uploads/2017/04/Nature-Rain-Condensation-Rain-Wallpaper-1920x1200-768x480.jpg" width= 1330px height=630px;>
+
+<div class="textb">
+
+	<marquee>*******fill the form below to join*******</marquee>
+	<div1>WELCOME TO ABHIPRO COMMUNITY!!</div1>
+
+	<fieldset>
+		<legend style="color: white;width: 30%;font-size: 2em;" >abhipro community</legend>
+		<form action="post.php" method="post" >
+		<p >NAME:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<input id="demo" type="text" name="name" placeholder="type your FULL name here" ></p>		
+		<p>PASSWORD:&emsp;&emsp;&emsp;&emsp;&emsp;<input  type="PASSWORD" name="PASSWORD" placeholder="max eight characters"> 
+		
+		<p> CONFIRM PASSWORD:<input  type="PASSWORD" name="PASSWORD"  ></p>
+		
+		<p> CONTACT NUMBER:&emsp;&nbsp;&nbsp;<input  type="NUMBER" name="contactno" ></p>
+		
+		<p>EMAIL:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;<input  type="mail" name="EMAIL" placeholder="****@gmail.com"  ></p>
+		
+		<p>BIRTH DATE:&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp; <input  type="DATE" name="bdate"></p>
+		
+		<p>RELIGION:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<SELECT><OPTION>SELECT RELIGION</OPTION><OPTION>HINDU</OPTION><OPTION>MUSLIM</OPTION><OPTION>CHRISTIAN</OPTION><OPTION>JAIN</OPTION><OPTION>BUDDHIST</OPTION><OPTION>SIKH</OPTION></SELECT></p>
+		
+		<p>CASTE:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<SELECT><OPTION>SELECT CASTE</OPTION><OPTION>OPEN</OPTION><OPTION>OBC</OPTION><OPTION>SC/ST</OPTION></SELECT></p>
+		
+		<p>GENDER:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<SELECT type="checkbox"><OPTION>SELECT GENDER</OPTION><OPTION>MALE</OPTION><OPTION>FEMALE</OPTION><OPTION>TRANSGENDER</OPTION></SELECT></p>
+		<button onclick="sure()">submit</button>
+		
+		</form>
+	</fieldset>
+ <a href="mailto:abhijeetringe90@gmail.com">hii</a>
+ 
+</div>
+</div>
+<script type="text/javascript">
+
+
+function sure()
+{ 
+var a = confirm("are u sure u want to submit?");
+
+if (a==true) {alert("successfully submitted..")}
+	else{alert("try again later")}
+	
+	 
+	 
+
+}
+
+
+	
+
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>days calculator</title>
+	<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+	<style type="text/css">
+	
+		
+button{position :relative;
+left: 95%;
+width: 50px;
+height: 50px;
+background: linear-gradient(red,yellow);
+font-size: 20px;
+font-family: 'Pacifico', cursive;
+}
+.b1{position :relative;
+left: 10%;
+top:30px;
+width: 100px;
+height: 50px;
+background: linear-gradient(cyan,blue);
+font-size: 20px;
+font-family: 'Pacifico', cursive;
+}
+
+
+.a{position: absolute;
+width: 100px;
+height: 50px;
+left: 430px;
+top: 100px;
+border: 5px solid #000;
+margin: 0;
+padding: 10px;
+font-size: 40px;}
+.b{position: absolute;
+width: 100px;
+height: 50px;
+left: 580px;
+top: 100px;
+border: 5px solid #000;
+margin: 0;
+padding: 10px;
+font-size: 40px;}
+.c{position: absolute;
+width: 100px;
+height: 50px;
+left: 730px;
+top: 100px;
+border: 5px solid #000;
+margin: 0;
+padding: 10px;
+font-size: 40px;}
+
+.d{position: absolute;
+width: 100px;
+height: 50px;
+left: 430px;
+top: 300px;
+border: 5px solid #000;
+margin: 0;
+padding: 10px;
+font-size: 40px;}
+.e{position: absolute;
+width: 100px;
+height: 50px;
+left: 580px;
+top: 300px;
+border: 5px solid #000;
+margin: 0;
+padding: 10px;
+font-size: 40px;}
+.f{position: absolute;
+width: 100px;
+height: 50px;
+left: 730px;
+top: 300px;
+border: 5px solid #000;
+margin: 0;
+padding: 10px;
+font-size: 40px
+}
+
+.g{position: absolute;
+width: 130px;
+height: 50px;
+left: 210px;
+top: 540px;
+border: 5px solid #000;
+margin: 0;
+padding: 10px;
+font-size: 40px;}
+
+
+.i{position: absolute;
+font-size: 50px;
+top:500px;}
+.j{position: absolute;
+font-size: 50px;
+top:500px;
+left: 400px;}
+.k{position: absolute;
+font-size: 50px;
+top:500px;
+left: 600px;}
+
+
+p{ font-family: 'Lobster', cursive;
+font-size: 50px; }
+
+
+	</style>
+
+</head>
+<body style="background: radial-gradient(#5ba39b,#02263a);">
+	<div>
+<button onclick="info()">info</button>
+
+<p>TODAY'S DATE:</p><input id="1" type="number" class="a">/<input type="number"  id="2" class="b"><input type="number"  id="3" class="c">
+<p>BIRTH DATE:</p><input id="4" type="number" class="d">/<input type="number" id="5" class="e"><input type="number" id="6" class="f">
+<button onclick="give()" class="b1">submit</button>
+<p class="i">HAPPY</p><p id="7" class="g"></p><p class="j">DAYS </p> <p id="8" class="k"> </p>
+</div>
+<script type="text/javascript">
+	var m = prompt('hey buddy \n welcome to \"yourlife\" code \n  please enter ur name below ');
+	
+
+function give()
+{
+    var a = document.getElementById("1").value;
+	var b = document.getElementById("2").value;
+	var c = document.getElementById("3").value;
+	var d = document.getElementById("4").value;
+	var e = document.getElementById("5").value;
+	var f = document.getElementById("6").value;
+	
+	var k = (c-f)*360.25;
+	var j = (a-d)*30;
+	if(j<0){j=j*(-1);}
+	var l = b-e;
+    if(l<0){l=l*(-1);}
+     var n=k-(-j)-(-l);
+	document.getElementById("7").innerHTML = n ;
+	document.getElementById("8").innerHTML = m+"!!" ;
+
+
+}
+
+
+
+
+	function info(){
+	alert("*** info***\n\n author:  Heisenberg \n dateofcreation: 1-09-18\n bugs: unknown \n sololearn id: abhijeet")
+}
+</script>
+</body>
+</html>

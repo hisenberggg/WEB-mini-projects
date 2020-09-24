@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>css loader </title>
+	<meta charset="utf-8" content="width=device-width,initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Eater" rel="stylesheet">
+	<style type="text/css">
+		body
+{
+background: #000;	
+font-family: 'Eater', cursive;	
+}
+let
+{
+position: relative;
+left:20%;
+top: 20%;
+font-size: 7em;
+color: cyan;
+margin:0;
+padding: 0;
+display: table-cell;
+text-align: center;
+text-shadow: 0 0 50px skyblue; 
+}
+.cir1
+{
+position: absolute;
+margin: 0;
+padding: 0;
+top: 40%;
+left:35%;
+width: 100px;
+height: 100px;
+box-shadow: 0 0 100px #f00;
+border-radius: 50%;
+background-color: :#000;
+border: 30px solid #ff0066;
+animation: load1 1s infinite;
+animation-delay: .5s;
+}
+.cir2
+{
+position: absolute;
+margin: 0;
+padding: 0;
+top: 40%;
+left:55%;
+width: 100px;
+height: 100px;
+box-shadow: 0 0 100px #f00;
+border-radius: 50%;
+background-color: :#000;
+border: 30px solid #ff0066;
+animation: load2 1s infinite;
+animation-delay: 1s;
+}
+
+@keyframes load1 
+{
+0%{transform: scale(1.0);}
+50%{transform: scale(0.1);border-color: #00ffff;left: 45%;}
+100%{transform: scale(1.0);left: 35%;border-color: #ff0066;}
+}
+@keyframes load2 
+{
+0%{transform: scale(1.0);}
+50%{transform: scale(0.1);border-color: #00ffff;left: 45%;}
+100%{transform: scale(1.0);left: 55%;border-color: #ff0066;}
+}
+.mou
+{
+position: absolute;
+margin: 0;
+padding: 0;
+width: 200px;
+height:40px;
+top: 70%;
+left:43%;
+border-radius:0 0 50% 50%; 
+border:10px solid #ff0066;
+background-color: #880000;
+box-shadow: 0 0 100px #ff0000;
+animation: mons 1s infinite;
+
+}
+@keyframes mons
+{
+50%{height: 100px;}
+}
+
+
+	</style>
+</head>
+<body>
+<let>Monster loader</let>
+<div class="cir1"></div>
+<div class="cir2"></div>
+<div class="mou"></div>
+</body>
+</html>
